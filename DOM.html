@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+     <form>
+        Male<input type="radio" name="gender" value="male">
+        Female<input type="radio" name="gender" value="female">
+
+        <input type="button" onclick="totalelements()" value="total Genders">
+    </form>
+    <script>
+        function totalelements() {
+            var allgenders = document.getElementsByName("gender");
+            alert("totla  Genders:" + allgenders.length);
+        }
+    </script> 
+
+
+    <h1>Javascript Dom</h1>
+    <h2>this is h2</h2>
+    <h2>this is h2</h2>
+    <h3>this is h3</h3>
+    <h3>this is h3</h3>
+    <h3>this is h3</h3>
+    <button onclick="counth2()">count h2</button>
+    <button onclick="counth3()">count h3</button>
+    <script>
+        function counth2() {
+            var totalh2 = document.getElementsByTagName("h2");
+            alert("total h2   tags are:" + totalh2.length);
+
+        }
+        function counth3() {
+            var totalh3 = document.getElementsByTagName("h3");
+            alert("total  h3  tags are:" + totalh3.length);
+        }
+
+
+    </script>
+
+    <!-- <input id="data" type="text">
+    <button onclick="displayData()">submit</button> -->
+
+
+
+    <!-- 
+    <script>
+
+
+        function displayData() {
+            let inputData = document.getElementById("data").value
+            console.log(inputData)
+        }</script> -->
+
+</body>
+
+</html>
