@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>callback</h1>
+    <h2>Javascript</h2>
+
+    <script>
+        function showData(name,amt){
+            alert("enter name"+ name + '\n  Enter amount'+ amt);
+        }
+        function getData(callback){
+            var  name= prompt("callback \n Enter ur name?");
+            var amt =  prompt("enter some amount");
+            callback(name,amt);
+        }
+        getData(showData);
+
+    //....
+     setTimeout(()=>{
+          console.log("this is adone");
+     }  ,4000);
+     //..
+     setTimeout(function(){
+        console.log("submited");
+     } ,5000)
+
+
+    </script>
+</body>
+</html>
