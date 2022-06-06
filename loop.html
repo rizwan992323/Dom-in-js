@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //< less
+        //> 
+        // for : loops through a block of code a number of times.
+        // for/in: loops through the properties of an object.
+        // for/of: loops through the values of an iterable object.
+        // while : loops through a block of code while a specified condition is true.
+
+
+        // for (let i = 1; i < 100; i++) {
+        //     console.log(i);
+        //     if (i > 22) {
+        //         break;
+        //     }
+
+        // }
+        //....
+        // The following example uses the if...else statement 
+        // to check if the age 
+        // is greater than or equal to 18:
+
+
+        // for (let i = 1; i < 5; i++) {
+        //     console.log(i);
+        // }
+
+        // for (let j = 1; ; j += 2) {
+        //     console.log(j);
+        //     if (j > 10) {
+        //         break;
+        //     }
+        // }
+
+        const array = ["one", "two", "three", "pune", "nashik", "mumbai"]
+        array.forEach(
+            function (item, index) {
+
+                console.log(item, index);
+            });
+
+        const ar = ['indai', 'usa', 'america', 'dubai']
+        console.log(ar)
+
+        ar.forEach(
+            function (item, index) {
+                console.log(item, index);
+            }
+        )
+                let age1 = [1, 2, 16, 18, 23];
+                if (age1 >= 18) {
+                    console.log('you can sign up.');
+                } else {
+                    console.log('cant');
+                }
+        //....
+        let age = [1, 2, 16, 18,22, 34];
+
+        if (age >= 18) {
+          console.log('You can sign up.');
+        } else {
+          console.log('You must be at least 18 to sign up.');
+        }
+
+
+        var myPoints = 120;
+        var message;
+
+        if (myPoints > 100) {
+            message = "Congratulations, you have enough points to redeem for a prize!";
+        }
+        else if (myPoints > 50) {
+            message = "Keep going, you almost have enough points for a prize!";
+        }
+        else {
+            message = "Sorry, you haven't earned enough points for a prize yet.";
+        }
+
+        //   var messageBox = document.getElementById('message');
+        //   messageBox.innerHTML= message;
+
+        console.log(message);
+    </script>
+</body>
+
+</html>
